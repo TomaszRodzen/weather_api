@@ -15,3 +15,14 @@ https://httpstat.us/503
 503 Service Unavailable
 https://httpstat.us/520
 520 Web server is returning an unknown error
+
+Za pomocą dokumentacji wykonaj następujące zapytania:
+Pobranie wszystkich piw z bazy
+Pobranie piwa o ID 21
+Pobranie drugiej strony z 25 wynikami
+
+Dodatkowe:
+Napisz zapytanie, które zwróci kod odpowiedzi HTTP 400
+Napisz zapytanie, które zwróci piwa o IBU większym niż 20
+Napisz zapytanie, które zwróci drugą, pięcioelementową stronę z piwami z dodatkiem chmielu „Saaz"
+Sprawdź, czy możesz pobrać losowe piwo z użyciem filtru.
