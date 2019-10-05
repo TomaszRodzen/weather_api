@@ -25,17 +25,17 @@ https://api.punkapi.com/v2/beers/
 https://api.punkapi.com/v2/beers/21
 
 3. Pobranie drugiej strony z 25 wynikami
-https://api.punkapi.com/v2/beers/?page2
+https://api.punkapi.com/v2/beers?page2
 
 Dodatkowe:
 4. Napisz zapytanie, które zwróci kod odpowiedzi HTTP 400
 https://api.punkapi.com/v2/beers/esgfdsgr
 
 5. Napisz zapytanie, które zwróci piwa o IBU większym niż 20
-https://api.punkapi.com/v2/beers/?ibu>20
+https://api.punkapi.com/v2/beers?ibu>20
 
 6. Napisz zapytanie, które zwróci drugą, pięcioelementową stronę z piwami z dodatkiem chmielu „Saaz"
-https://api.punkapi.com/v2/beers/?page2?name=Saaz
+https://api.punkapi.com/v2/beers?page2?name=Saaz
 
 7. Sprawdź, czy możesz pobrać losowe piwo z użyciem filtru.
 https://api.punkapi.com/v2/beers/random
