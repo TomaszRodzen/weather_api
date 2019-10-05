@@ -1,3 +1,17 @@
 this is first comment
 https://httpstat.us/200
 200 OK
+https://httpstat.us/203
+203 Non-Authoritative Information
+https://httpstat.us/302
+302 Found
+https://httpstat.us/303
+303 See Other
+https://httpstat.us/303
+303 See Other
+https://httpstat.us/404
+404 Not Found
+https://httpstat.us/503
+503 Service Unavailable
+https://httpstat.us/520
+520 Web server is returning an unknown error
