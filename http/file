@@ -39,3 +39,75 @@ https://api.punkapi.com/v2/beers?page2?name=Saaz
 
 7. Sprawdź, czy możesz pobrać losowe piwo z użyciem filtru.
 https://api.punkapi.com/v2/beers/random
+
+
+https://api.chucknorris.io/jokes/random?animal
+"Chuck Norris just had an incredible lesbian orgy with Nicole Kidman, Penelope Cruz and Katie Holmes. He then mailed the footage to Tom Cruise as a birthday present."
+"Bob the Builder. Can we fix it. Chuck Norris already did. With a roundhouse kick."
+
+https://api.chucknorris.io/jokes/random?dev
+"Chuck norris says: Ima Firin Mah Lazor Shoop-de-woop yo ass"
+"Chuck Norris did not learn French. He invented French."
+
+
+
+https://api.chucknorris.io/jokes/random?music
+"Chuck Norris was once a guest on Top Gear.  Chuck and his 18 wheeler beat The Stig's in a Veyron best lap by 14 seconds.  Lucky Chuck Norris only had to change one tyre."
+"Chuck Norris uses billiard cues as acupuncture needles."
+
+
+
+Za pomocą dokumentacji wykonaj następujące zapytania:
+
+1. Pobranie wszystkich piw z bazy
+import http.client
+
+conn = http.client.HTTPSConnection('api.punkapi.com')
+conn.request('GET', '/v2/beers')
+response = conn.getresponse()
+print(response.status, response.reason, response.read())
+print(response.msg)
+
+2. Pobranie piwa o ID 21
+import http.client
+
+conn = http.client.HTTPSConnection('api.punkapi.com')
+conn.request('GET', '/v2/beers/21')
+response = conn.getresponse()
+print(response.status, response.reason, response.read())
+print(response.msg)
+
+3. Pobranie drugiej strony z 25 wynikami
+import http.client
+
+conn = http.client.HTTPSConnection('api.punkapi.com')
+conn.request('GET', '/v2/beers?page2')
+response = conn.getresponse()
+print(response.status, response.reason, response.read())
+print(response.msg)
+
+Dodatkowe:
+4. Napisz zapytanie, które zwróci kod odpowiedzi HTTP 400
+import http.client
+
+conn = http.client.HTTPSConnection('api.punkapi.com')
+conn.request('GET', '/v2/beers/wieuf39wwe')
+response = conn.getresponse()
+print(response.status, response.reason, response.read())
+print(response.msg)
+
+5. Napisz zapytanie, które zwróci piwa o IBU większym niż 20
+import http.client
+
+conn = http.client.HTTPSConnection('api.punkapi.com')
+conn.request('GET', '/v2/beers?ibu>20')
+response = conn.getresponse()
+print(response.status, response.reason, response.read())
+print(response.msg)
+
+6. Napisz zapytanie, które zwróci drugą, pięcioelementową stronę z piwami z dodatkiem chmielu „Saaz"
+https://api.punkapi.com/v2/beers?page2?hops=Saaz
+
+7. Sprawdź, czy możesz pobrać losowe piwo z użyciem filtru.
+https://api.punkapi.com/v2/beers/random
+
